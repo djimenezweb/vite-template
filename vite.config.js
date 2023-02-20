@@ -4,10 +4,8 @@ import { ViteMinifyPlugin } from 'vite-plugin-minify';
 
 export default defineConfig({
   plugins: [ViteMinifyPlugin({}), ViteImageOptimizer({})],
-  base: '',
-  root: 'src',
   build: {
     assetsDir: 'assets',
-    outDir: '../docs'
+    outDir: 'docs'
   }
 });
